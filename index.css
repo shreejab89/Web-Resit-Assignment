@@ -33,8 +33,42 @@ body, html {
 
 .navigation ul li a:hover {
     color: #ffca28;
-    border-bottom: 3px solid #ffca28;
+    border-bottom: 3px solid #ffca28;
 }
+
+
+
+/* For the small screens */
+@media (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background-color: #333;
+        padding-top: 60px;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    /* Hide the navbar and show the menu icon */
+    .navbar {
+        justify-content: space-between;
+    }
+
+
+}
+
 .main-homepage {
     display: flex;
     align-items: center;
@@ -51,7 +85,23 @@ body, html {
     max-width: 600px;
     position: absolute;
     top: 150px;
-    z-index: 2;
+    z-index: 2;
+}
+
+/* keyframes is added for the animation in the homepage*/
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
 }
 
 /* Apply the looping animation to the Hello text */
@@ -74,10 +124,6 @@ body, html {
     margin: 20px 0;
     color: #e1bee7;
 }
-
-
-
-
 
 .homepage-buttons {
     display: flex;
@@ -106,7 +152,7 @@ body, html {
     height: 100%;
     background: url('images/pexels-kokorevas-29053375.jpg') no-repeat center center/cover;
     opacity: 0.4;
-    z-index: 1;
+    z-index: 1;
 }
 
 .footer-end {/*Styling of the footer content*/
@@ -135,5 +181,7 @@ body, html {
 
 .footer-social-icons a:hover {/*Making the social icons in the footer hover*/
     color: #ffe082;
-    text-decoration: underline;
+    text-decoration: underline;
 }
+
+
