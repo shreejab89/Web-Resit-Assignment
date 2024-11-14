@@ -35,6 +35,79 @@ body, html {
     color: #ffca28;
     border-bottom: 3px solid #ffca28;
 }
+.main-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #000000, #d500f9);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.main-homepage-content {
+    max-width: 600px;
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+
+/* Apply the looping animation to the Hello text */
+.homepage-title {
+    font-size: 4rem;
+    margin: 0;
+    animation: fadeSlideIn 0.9s ease-out infinite;
+    animation-delay: 0.3s; /* Delay to create a gap before the animation starts */
+}
+
+
+.homepage-subtitle {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #ffe082;
+}
+
+.homepage-description {
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #e1bee7;
+}
+
+
+
+
+
+.homepage-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-button {
+    background-color: #ffca28;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.contact-email {
+    color: #bbdefb;
+    text-decoration: underline;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/pexels-kokorevas-29053375.jpg') no-repeat center center/cover;
+    opacity: 0.4;
+    z-index: 1;
+}
 
 .footer-end {/*Styling of the footer content*/
     background-color: #333;
