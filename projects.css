@@ -30,7 +30,6 @@ body, html {
     margin: 0 15px;
 }
 
-
 .navigation ul li a {
     color: #f9f9f9;
     text-decoration: none;
@@ -39,8 +38,9 @@ body, html {
 
 .navigation ul li a:hover {
     color: #ffca28;
-    border-bottom: 3px solid #ffca28;
+    border-bottom: 3px solid #ffca28;
 }
+
 /* Hero Section */
 .main-homepage {
     display: flex;
@@ -71,6 +71,7 @@ body, html {
     padding: 40px 20px;
     text-align: center;
 }
+
 /* Grid Container for Project Images */
 .grid-container-Images {
     display: grid;
@@ -127,8 +128,9 @@ body, html {
 
 .footer-social-icons a:hover {
     color: #ffe082;
-    text-decoration: underline;
+    text-decoration: underline;
 }
+
 /* Sidebar Navigation for Small Screens */
 @media (max-width: 768px) {
     .navigation {
@@ -152,8 +154,8 @@ body, html {
         margin: 20px 0;
     }
 
-    /* Hide the navbar and show the menu icon */
-    .navbar{
+    /* Navbar for Small Screens */
+    .navbar {
         justify-content: space-between;
-    }
+    }
 }
