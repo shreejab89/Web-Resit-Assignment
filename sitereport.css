@@ -1,4 +1,6 @@
-body, html {
+/* Base Styles */
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -6,6 +8,7 @@ body, html {
     background-color: #f3f3f3;
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,11 +27,24 @@ body, html {
     display: flex;
     list-style: none;
 }
-navigation ul li a {
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
     color: #f9f9f9;
     padding: 0 15px;
-    text-decoration: none;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
 }
+
+.navigation ul li a:hover {
+    color: #ffca28;
+    border-bottom: 3px solid #ffca28;
+}
+
+/* Hero Section */
 .main-homepage {
     display: flex;
     align-items: center;
@@ -51,6 +67,8 @@ navigation ul li a {
     opacity: 0.4;
     z-index: 1;
 }
+
+/* Footer Styles */
 .footer-end {
     background-color: #333;
     color: #f9f9f9;
@@ -79,18 +97,18 @@ navigation ul li a {
     color: #ffe082;
     text-decoration: underline;
 }
-.navigation ul li {
-    margin: 0 15px;
-}
 
-.navigation ul li a {
-    color: #f9f9f9;
-    padding: 0 15px;
-    text-decoration: none;
-    transition: color 0.3s, border-bottom 0.3s;
-}
-
-.navigation ul li a:hover {
-    color: #ffca28;
-    border-bottom: 3px solid #ffca28;
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
 }
