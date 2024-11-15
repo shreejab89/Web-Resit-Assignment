@@ -24,6 +24,7 @@ body, html {
     display: flex;
     list-style: none;
 }
+
 .navigation ul li a {
     color: #f9f9f9;
     padding: 0 15px;
@@ -50,6 +51,7 @@ body, html {
 .navigation {
     transition: transform 0.3s ease;
 }
+
 @media (max-width: 768px) {
     .navigation {
         position: fixed;
@@ -76,24 +78,28 @@ body, html {
     .menu-icon {
         display: block;
     }
-  /* Toggle menu display when checkbox is checked */
-  #menu-toggle:checked + .menu-icon + .navigation {
-    transform: translateX(100%);
+
+    /* Toggle menu display when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + .navigation {
+        transform: translateX(100%);
+    }
 }
-}
+
+/* Main content and Footer remain unchanged */
+
 
 /* Hero Section */
 .main-homepage {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 50px 20px;
-    height: 100vh;
     background: linear-gradient(120deg, #000000, #d500f9);
     color: #fff;
+    height: 100vh;
     position: relative;
     text-align: center;
+    flex-direction: column;
 }
 
 .bg-image {
@@ -107,7 +113,6 @@ body, html {
     z-index: 1;
 }
 
-/* Video Section */
 .video-section {
     z-index: 2;
     text-align: center;
@@ -124,7 +129,7 @@ body, html {
     height: 315px;
 }
 
-/* Footer Styles */
+/* Footer */
 .footer-end {
     background-color: #333;
     color: #f9f9f9;
@@ -152,24 +157,4 @@ body, html {
 .footer-social-icons a:hover {
     color: #ffe082;
     text-decoration: underline;
-}
-
-/* Responsive Styles for Small Screens */
-@media (max-width: 768px) {
-    .navigation ul {
-        display: none; /* Hide menu by default on mobile */
-        flex-direction: column;
-        background: #333;
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        width: 200px;
-        padding: 10px;
-        border-radius: 8px;
-        z-index: 10;
-    }
-    
-    .navbar {
-        justify-content: space-between;
-    }
 }
