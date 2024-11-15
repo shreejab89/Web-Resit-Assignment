@@ -1,0 +1,131 @@
+/* Basic Reset and Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3f3f3;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #f9a825;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+
+.navigation ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: #ffca28;
+    border-bottom: 3px solid #ffca28;
+}
+/* Hero Section */
+.main-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #000000, #d500f9);
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/pexels-kokorevas-29053375.jpg') no-repeat center center/cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Projects-Collections Container */
+.Projects-Collections {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+/* Grid Container for Project Images */
+.grid-container-Images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-items-collection {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.grid-items-collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.3s;
+}
+
+.grid-items-collection:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.grid-items-collection:hover img {
+    opacity: 0.8;
+}
+
+/* Footer Styling */
+.footer-end {
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-end-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer-social-icons a {
+    color: #ffca28;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-social-icons a:hover {
+    color: #ffe082;
+    text-decoration: underline;
+}
