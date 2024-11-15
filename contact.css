@@ -1,0 +1,218 @@
+/* Base styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3f3f3;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #f9a825;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li a {
+    color: #f9f9f9;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    color: #ffca28;
+    border-bottom: 3px solid #ffca28;
+}
+
+/* Hero Section */
+.main-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #000000, #d500f9);
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/pexels-kokorevas-29053375.jpg") no-repeat center center/cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Footer */
+.footer-end {
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-end-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer-social-icons {
+    margin-top: 10px;
+}
+
+.footer-social-icons a {
+    color: #ffca28;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-social-icons a:hover {
+    color: #ffe082;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    z-index: 2;
+}
+
+/* Glass effect contact card */
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+
+/* Contact info styles */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.label {
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Links styling for GitHub, LinkedIn, Email */
+.contact-info a {
+    color: #00e6ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contact-info a:hover {
+    color: #ff0099;
+}
+
+/* Contact form styling */
+.contact-form label {
+    font-size: 1rem;
+    color: #f0f0f0;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Button styling */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0078ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form button:hover {
+    background-color: #005fdd;
+    transform: scale(1.05);
+}
+
+/* Sidebar Navigation for Small Screens */
+@media (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background-color: #333;
+        padding-top: 60px;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .contact-card {
+        width: 95%;
+        padding: 20px;
+    }
+}
