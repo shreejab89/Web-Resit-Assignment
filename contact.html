@@ -1,21 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
     <header class="navbar">
-        <div class="logo">Shreeza's Portfolio</div>
-        
-        <!-- Toggle Menu for smaller screens -->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <div class="logo">Shreeza's Portfolio</div>
+      
+      <!-- Toggle Menu for smaller screens -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-        <nav class="navigation">
+      <nav class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Projects</a></li>
@@ -24,98 +23,50 @@
                 <li><a href="sitereport.html">Sitereport</a></li>
             </ul>
         </nav>
-    </header>
-<section class="main-homepage">
-    <div class="bg-image"></div>
-    <div class="contact-card">
-      <h1>Contact Me</h1>
-      <div class="contact-info">
-        <p>
-          <span class="label">Email:</span>
-          <a href="mailto:shreezabaskota@gmail.com"
-            >shreezabaskota@gmail.com</a
-          >
-        </p>
-        <p>
-          <span class="label">LinkedIn:</span>
-          <a
-            href="https://www.linkedin.com/in/shreeza-baskota"
-            target="_blank"
-            >Shreeza Baskota</a
-          >
-        </p>
-        <p>
-          <span class="label">GitHub:</span>
-          <a href="https://github.com/shreezabaskota" target="_blank"
-            >GitHub Profile</a
-          >
-        </p>
+    </header>
+
+    <section class="main-homepage">
+      <div class="bg-image"></div>
+      <div class="contact-card">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+          <p>
+            <span class="label">Email:</span>
+            <a href="mailto:shreezabaskota@gmail.com">shreezabaskota@gmail.com</a>
+          </p>
+          <p>
+            <span class="label">LinkedIn:</span>
+            <a href="https://www.linkedin.com/in/shreeza-baskota" target="_blank">Shreeza Baskota</a>
+          </p>
+          <p>
+            <span class="label">GitHub:</span>
+            <a href="https://github.com/shreezabaskota" target="_blank">GitHub Profile</a>
+          </p>
+        </div>
+        <form class="contact-form" action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-      <form class="contact-form" action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-  <section class="main-homepage">
-    <div class="bg-image"></div>
-    <div class="contact-card">
-      <h1>Contact Me</h1>
-      <div class="contact-info">
-        <p>
-          <span class="label">Email:</span>
-          <a href="mailto:shreezabaskota@gmail.com"
-            >shreezabaskota@gmail.com</a
-          >
-        </p>
-        <p>
-          <span class="label">LinkedIn:</span>
-          <a
-            href="https://www.linkedin.com/in/shreeza-baskota"
-            target="_blank"
-            >Shreeza Baskota</a
-          >
-        </p>
-        <p>
-          <span class="label">GitHub:</span>
-          <a href="https://github.com/shreezabaskota" target="_blank"
-            >GitHub Profile</a
-          >
-        </p>
+    <footer class="footer-end">
+      <div class="footer-end-content">
+        <p>&copy; 2024 Shreeza Baskota. All Rights Reserved.</p>
+        <div class="footer-social-icons">
+          <a href="https://www.linkedin.com/in/shreeza-baskota" target="_blank">LinkedIn</a>
+          <a href="https://github.com/shreezabaskota" target="_blank">GitHub</a>
+          <a href="mailto:shreezabaskota@gmail.com">Email</a>
+        </div>
       </div>
-      <form class="contact-form" action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-    </section>
-<footer class="footer-end">
-    <div class="footer-end-content">
-      <p>&copy; 2024 Shreeza Baskota. All Rights Reserved.</p>
-      <div class="footer-social-icons">
-        <a href="https://www.linkedin.com/in/shreeza-baskota" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/shreezabaskota" target="_blank">GitHub</a>
-        <a href="mailto:shreezabaskota@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
- </body>
+    </footer>
+  </body>
 </html>
