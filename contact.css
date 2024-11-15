@@ -1,6 +1,4 @@
-/* Base styles */
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -26,7 +24,6 @@ html {
     display: flex;
     list-style: none;
 }
-
 .navigation ul li a {
     color: #f9f9f9;
     padding: 0 15px;
@@ -36,6 +33,53 @@ html {
 .navigation ul li a:hover {
     color: #ffca28;
     border-bottom: 3px solid #ffca28;
+}
+
+/* Sidebar Menu for Small Screens */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #f9a825;
+    cursor: pointer;
+}
+
+.navigation {
+    transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background-color: #333;
+        padding-top: 60px;
+        z-index: 1000;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+  /* Toggle menu display when checkbox is checked */
+  #menu-toggle:checked + .menu-icon + .navigation {
+    transform: translateX(100%);
+}
 }
 
 /* Hero Section */
