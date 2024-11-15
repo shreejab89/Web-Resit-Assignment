@@ -112,3 +112,22 @@ body, html {
     color: #ffe082;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .navigation ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 10;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+
+   
+}
